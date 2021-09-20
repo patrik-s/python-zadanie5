@@ -5,14 +5,14 @@ print("Okey {0}\nPravidla su nasledovne. Ja si myslim cislo a ty budes hadat.\nA
 i = 0
 j = 0
 g = 'stoj'
-while g != 'koniec':
+while (g.lower()) != 'koniec':
 	print("\n")
 	print("Myslim si cislo: ")
-	while g != 'koniec':
+	while (g.lower()) != 'koniec':
 		import random
 		random = random.randint(1,10)
 		g = input("Tvoj tip?: ")
-		if g != "koniec":
+		if (g.lower()) != "koniec":
 			if g == str(random):
 				print("Spravne")
 				i += 1
@@ -24,5 +24,6 @@ vysledok = """+----tvoje skore-----+
 | spravne   |   {}    |
 | nespravne |   {}   |
 | celkom    |   {}   |
-+====================+"""  				
++====================+"""			
 print(vysledok.format(i,j,i+j))
+
