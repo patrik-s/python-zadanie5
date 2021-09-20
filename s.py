@@ -27,3 +27,6 @@ vysledok = """+----tvoje skore-----+
 +====================+"""			
 print(vysledok.format(i,j,i+j))
 
+
+"co pozeras"
+
